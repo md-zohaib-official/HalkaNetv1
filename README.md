@@ -1,8 +1,8 @@
 # HalkaNet: A Tri-Branch Lightweight CNN with Fixed-Filter Inductive Bias for Accurate Edge-Device Image Classification
 
-<p align="center">
+<!-- <p align="center">
   <img src="assets/halkanet_architecture.png" alt="HalkaNet Architecture" width="860"/>
-</p>
+</p> -->
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.9%2B-blue" alt="Python 3.9+"/>
@@ -247,14 +247,16 @@ C_mid        = round8( 2 x C_fused_out - C_fused_out / tail_depth )
 
 ```
 HalkaNetv1/
-├── halkanet/
+├── models/
 │   ├── __init__.py
 │   ├── architectures.py     # HalkaNet model definition
 │   ├── components.py        # DSConv, DenseGrowth, SE, MBConv blocks
 │   └── filters.py           # Fixed filter bank implementations
 ├── config.py                # Enums, default hyperparameters
-├── train.py                 # Training script
-├── evaluate.py              # Evaluation & benchmark utilities
+├── utils/
+│   ├── training.py          # Training script
+├── utils/
+│   ├── metrics.py           # Evaluation & benchmark utilities
 ├── assets/
 │   └── halkanet_architecture.png
 ├── requirements.txt
@@ -271,8 +273,7 @@ Department of Computer Science and Engineering,
 Kattankulathur, Chennai — 603203, Tamil Nadu, India.
 
 ---
-
 <p align="center">
-  Made with dedication at <b>SRM Institute of Science and Technology</b>, Chennai<br/>
-  <i>M.Tech Final Semester Project — 2026</i>
+  Made with dedication at <b>SRM Institute of Science and Technology</b>, Kattankulathur, Tamil Nadu, India<br/>
+  <i>M.Tech Final Semester Project - 2026</i>
 </p>
