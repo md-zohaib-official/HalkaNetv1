@@ -2,3 +2,5 @@ data/
 exports/
 figure/
 checkpoints/
+__pycache__/
+.venv/
